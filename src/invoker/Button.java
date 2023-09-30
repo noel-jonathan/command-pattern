@@ -2,10 +2,10 @@ package invoker;
 
 import commands.Command;
 
-public class RemoteButton {
+public class Button {
     private Command command;
 
-    public RemoteButton(Command newCommand) {
+    public Button(Command newCommand) {
         this.command = newCommand;
     }
 

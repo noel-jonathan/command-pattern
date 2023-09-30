@@ -1,35 +1,21 @@
-import commands.TurnOff;
-import commands.TurnOn;
-import commands.VolumeDown;
-import commands.VolumeUp;
 import electronicdevices.ElectronicDevice;
 import electronicdevices.Radio;
 import electronicdevices.Television;
-import invoker.RemoteButton;
+import invoker.Remote;
 
 public class Main {
     public static void main(String[] args) {
         ElectronicDevice myTV = new Television();
+        Remote remote = new Remote(myTV);
 
-        TurnOn turnOnTV = new TurnOn(myTV);
-        TurnOff turnOffTV = new TurnOff(myTV);
-        VolumeUp volumeUpTV = new VolumeUp(myTV);
-        VolumeDown volumeDownTV = new VolumeDown(myTV);
+        remote.pressOn();
 
+        remote.pressVolumeUp();
+        remote.pressVolumeUp();
 
-        RemoteButton buttonON = new RemoteButton(turnOnTV);
-        RemoteButton buttonOFF = new RemoteButton(turnOffTV);
-        RemoteButton buttonVolumeUp = new RemoteButton(volumeUpTV);
-        RemoteButton buttonVolumeDown = new RemoteButton(volumeDownTV);
+        remote.pressVolumeDown();
 
-        buttonON.press();
-
-        buttonVolumeUp.press();
-        buttonVolumeUp.press();
-
-        buttonVolumeDown.press();
-
-        buttonOFF.press();
+        remote.pressOff();
 
 /*      -----------------------------------------------------------------------------------------        */
 
@@ -37,23 +23,15 @@ public class Main {
 
         ElectronicDevice myRadio = new Radio();
 
-        TurnOn turnOnRadio = new TurnOn(myRadio);
-        TurnOff turnOffRadio = new TurnOff(myRadio);
-        VolumeUp volumeUpRadio = new VolumeUp(myRadio);
-        VolumeDown volumeDownRadio = new VolumeDown(myRadio);
+        remote = new Remote(myRadio);
 
-        buttonON = new RemoteButton(turnOnRadio);
-        buttonOFF = new RemoteButton(turnOffRadio);
-        buttonVolumeUp = new RemoteButton(volumeUpRadio);
-        buttonVolumeDown = new RemoteButton(volumeDownRadio);
+        remote.pressOn();
 
-        buttonON.press();
+        remote.pressVolumeUp();
+        remote.pressVolumeUp();
 
-        buttonVolumeUp.press();
-        buttonVolumeUp.press();
+        remote.pressVolumeDown();
 
-        buttonVolumeDown.press();
-
-        buttonOFF.press();
+        remote.pressOff();
     }
 }
