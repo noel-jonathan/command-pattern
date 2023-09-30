@@ -3,14 +3,14 @@ package commands;
 import electronicdevices.ElectronicDevice;
 
 public class TurnOn implements Command{
-    private ElectronicDevice aDevice;
+    private ElectronicDevice device;
 
     public TurnOn(ElectronicDevice newDevice) {
-        this.aDevice = newDevice;
+        this.device = newDevice;
     }
 
     @Override
     public void execute() {
-        aDevice.on();
+        device.on();
     }
 }

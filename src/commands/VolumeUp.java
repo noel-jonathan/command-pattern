@@ -3,14 +3,14 @@ package commands;
 import electronicdevices.ElectronicDevice;
 
 public class VolumeUp implements Command{
-    private ElectronicDevice aDevice;
+    private ElectronicDevice device;
 
     public VolumeUp(ElectronicDevice newDevice) {
-        this.aDevice = newDevice;
+        this.device = newDevice;
     }
 
     @Override
     public void execute() {
-        aDevice.volumeUp();
+        device.volumeUp();
     }
 }
