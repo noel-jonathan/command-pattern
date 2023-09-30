@@ -1,6 +1,9 @@
 package invoker;
 
-import commands.*;
+import commands.TurnOff;
+import commands.TurnOn;
+import commands.VolumeDown;
+import commands.VolumeUp;
 import electronicdevices.ElectronicDevice;
 
 public class Remote {
@@ -8,34 +11,27 @@ public class Remote {
     private Button buttonOff;
     private Button buttonVolumeUp;
     private Button buttonVolumeDown;
-    private TurnOn turnOn;
-    private TurnOff turnOff;
-    private VolumeUp volumeUp;
-    private VolumeDown volumeDown;
 
     public Remote(ElectronicDevice device) {
-        this.turnOn = new TurnOn(device);
-        this.turnOff = new TurnOff(device);
-        this.volumeUp = new VolumeUp(device);
-        this.volumeDown = new VolumeDown(device);
-        this.buttonOn = new Button(this.turnOn);
-        this.buttonOff = new Button(this.turnOff);
-        this.buttonVolumeUp = new Button(this.volumeUp);
-        this.buttonVolumeDown = new Button(this.volumeDown);
+        this.buttonOn = new Button(new TurnOn(device));
+        this.buttonOff = new Button(new TurnOff(device));
+        this.buttonVolumeUp = new Button(new VolumeUp(device));
+        this.buttonVolumeDown = new Button(new VolumeDown(device));
     }
 
-    public void pressOn(){
+    public void pressOn() {
         this.buttonOn.press();
     }
 
-    public void pressOff(){
+    public void pressOff() {
         this.buttonOff.press();
     }
 
-    public void pressVolumeUp(){
+    public void pressVolumeUp() {
         this.buttonVolumeUp.press();
     }
-    public void pressVolumeDown(){
+
+    public void pressVolumeDown() {
         this.buttonVolumeDown.press();
     }
 

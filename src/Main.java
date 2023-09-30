@@ -17,12 +17,10 @@ public class Main {
 
         remote.pressOff();
 
-/*      -----------------------------------------------------------------------------------------        */
-
+/*      ---------------------------------------------        */
         System.out.println("\n");
 
         ElectronicDevice myRadio = new Radio();
-
         remote = new Remote(myRadio);
 
         remote.pressOn();

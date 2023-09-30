@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1578c-650c-4400-a0b1-9099750d7274" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/invoker/Remote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/invoker/Remote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/invoker/RemoteButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/invoker/Button.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695992233196</updated>
       <workItem from="1695992234198" duration="6828000" />
-      <workItem from="1696075415472" duration="3034000" />
+      <workItem from="1696075415472" duration="4490000" />
     </task>
     <servers />
   </component>
