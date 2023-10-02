@@ -13,4 +13,9 @@ public class VolumeDown implements Command{
     public void execute() {
         device.volumeDown();
     }
+
+    @Override
+    public void undo() {
+        device.volumeUp();
+    }
 }

@@ -8,14 +8,14 @@ public class Main {
         ElectronicDevice myTV = new Television();
         Remote remote = new Remote(myTV);
 
-        remote.pressOn();
+        remote.pressButtonOn();
 
-        remote.pressVolumeUp();
-        remote.pressVolumeUp();
+        remote.pressButtonVolumeUp();
+        remote.pressButtonVolumeUp();
 
-        remote.pressVolumeDown();
+        remote.pressButtonVolumeDown();
 
-        remote.pressOff();
+        remote.pressButtonOff();
 
 /*      ---------------------------------------------        */
         System.out.println("\n");
@@ -23,13 +23,13 @@ public class Main {
         ElectronicDevice myRadio = new Radio();
         remote = new Remote(myRadio);
 
-        remote.pressOn();
+        remote.pressButtonOn();
 
-        remote.pressVolumeUp();
-        remote.pressVolumeUp();
+        remote.pressButtonVolumeUp();
+        remote.pressButtonVolumeUp();
 
-        remote.pressVolumeDown();
+        remote.pressButtonVolumeDown();
 
-        remote.pressOff();
+        remote.pressButtonOff();
     }
 }

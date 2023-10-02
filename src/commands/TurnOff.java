@@ -13,4 +13,9 @@ public class TurnOff implements Command{
     public void execute() {
         device.off();
     }
+
+    @Override
+    public void undo() {
+        device.on();
+    }
 }
